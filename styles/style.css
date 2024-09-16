@@ -71,8 +71,8 @@ header {
 
   .search-bar > input:focus {
     border: none;
-    box-shadow: rgba(0, 0, 255, 0.35) 0px 5px 15px;
-    outline: solid 1px blue ;
+    box-shadow: rgba(25, 146, 212, 0.35) 0px 5px 15px;
+    outline: solid 1px rgb(25, 146, 212) ;
   }
 
   .search-bar > button {
@@ -84,7 +84,7 @@ header {
   }
 
   .search-bar > button:hover {
-    color: blue;
+    color: rgb(25, 146, 212);
     cursor: pointer;
   }
 
@@ -138,6 +138,41 @@ header {
   .greeting > p:last-child {
     font-size: x-large;
   }
+
+  /* Header - Main Options */
+  .main-options {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .main-options-list {
+    display: flex;
+    list-style-type: none;
+    width: 100%;
+    justify-content: right;
+    gap: 30px;
+    margin-right: 10%;
+  }
+  
+  .main-options-list > li {
+    width: 100px;
+    background-color: rgb(25, 146, 212);
+    border-radius: 25px;
+    text-align: center;
+    overflow: hidden;
+  }
+  
+  .main-options-links {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    height: 100%;
+    width: 100%;
+    border-radius: 25px;
+  }
+
 /* Sidebar */
 aside {
   grid-row: 1 / 3;
