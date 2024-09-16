@@ -1,6 +1,6 @@
 /*
-  Josh's Custom CSS Reset
-  https://www.joshwcomeau.com/css/custom-css-reset/
+  CSS Reset
+  Based off https://www.joshwcomeau.com/css/custom-css-reset/
 */
 
 *, *::before, *::after {
@@ -13,6 +13,7 @@
 
 body {
   line-height: 1.5;
+  font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   -webkit-font-smoothing: antialiased;
 }
 
@@ -45,6 +46,45 @@ header {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.search-bar{
+  display: flex;
+  align-self: center;
+  width: 100%;
+  gap: 20px;
+}
+.search-bar > input {
+  width: 90%;
+  border-radius: 25px;
+  border: none;
+  background-color: rgb(241, 241, 241);
+  padding: 5px;
+}
+
+.search-bar > input:focus {
+  border: none;
+  box-shadow: rgba(0, 0, 255, 0.35) 0px 5px 15px;
+  outline: solid 1px blue ;
+}
+
+.search-bar > button {
+  padding-inline: 0;
+  padding-block: 0;
+  line-height: 0;
+  border: none;
+  background: none;
+}
+
+.search-bar > button:hover {
+  color: blue;
+  cursor: pointer;
 }
 
 /* Sidebar */
