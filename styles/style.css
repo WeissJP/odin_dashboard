@@ -88,6 +88,35 @@ header {
     cursor: pointer;
   }
 
+  /* Header - Account Tools */
+  .account-tools {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 30px;
+    margin-right: 10%;
+  }
+
+  .account-tools > button {
+    padding-inline: 0;
+    padding-block: 0;
+    line-height: 0;
+    border: none;
+    background: none;
+  }
+
+  .account-tools > p {
+    font-weight: bold;
+  }
+
+  .account-tools > button > .material-icons {
+    font-variation-settings:
+      'FILL' 0,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+  }
+
 /* Sidebar */
 aside {
   grid-row: 1 / 3;
